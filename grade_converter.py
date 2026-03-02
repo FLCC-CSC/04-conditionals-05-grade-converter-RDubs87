@@ -1,8 +1,8 @@
 # FILE NAME - grade_converter.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Rob Warner
+# DATE: March 1, 2026
+# BRIEF DESCRIPTION:  convert grade to letter
 
 
 
@@ -15,22 +15,20 @@
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
-print('===== Grade Converter =====')
+grade = int(input('Enter the grade (between 0 and 100): '))
 
-percent = int(input('Enter a numerical grade (1-100): '))
-
-if percent > 100:
-    print('A+')
-elif percent >= 90:
-    print('A')
-elif percent >= 80:
-    print('B')
-elif percent >= 70:
-    print('C')
-elif percent >= 65:
-    print('D')
+if grade >= 90:
+    print('Your grade is an A')
+elif grade >= 80:
+    print('Your grade is a B')
+elif grade >= 70:
+    print('Your grade is a C')
+elif grade >= 65:
+    print('Your grade is a D')
+elif grade >= 0:
+    print('Your grade is an F')
 else:
-    print('F')
+    print('Invalid grade')
 
 ########### END YER CODE ABOVE THIS LINE ###########
 
@@ -83,7 +81,7 @@ D
 '''
 
 1. What is something you would tell a future student to be careful about when
-   doing this lab?
+   doing this lab? be careful with elif statements. They can get you good. 
 
 
 
